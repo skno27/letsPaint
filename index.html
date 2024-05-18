@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- tool board start -->
+      <section class="tools-board">
+        <!-- shapes -->
+        <div class="row shapes">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option">
+              <img
+                src="icons/rectangle.svg"
+                alt="" />
+              <span>Rectangle</span>
+            </li>
+            <li class="option">
+              <img
+                src="icons/circle.svg"
+                alt="" />
+              <span>Circle</span>
+            </li>
+            <li class="option">
+              <img
+                src="icons/triangle.svg"
+                alt="" />
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input
+                type="checkbox"
+                id="fill-color" />
+              <label for="fill-color">Fill Color</label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- tools -->
+        <div class="row tools">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option active">
+              <img
+                src="icons/brush.svg"
+                alt="" />
+              <span>Brush</span>
+            </li>
+            <li class="option">
+              <img
+                src="icons/Eraser.svg"
+                alt="" />
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input
+                type="range"
+                id="size-slider" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- colors -->
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input
+                type="color"
+                value="var(--mainLight)"
+                id="color-picker" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- ctrl buttons -->
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Canvas</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+      </section>
+      <!-- tool board end -->
+
+      <!-- drawing board start -->
+      <section class="drawing-board"></section>
+
+      <!-- drawing board end -->
+    </div>
+  </body>
+</html>
